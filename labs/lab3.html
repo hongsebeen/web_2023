@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>취업 정보 계정 만들기</title>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container-fluid px-5">
+<h2 class="text-center pt-3">취업 정보 계정 만들기</h2>
+<hr>
+    <p><span class="text-danger">*</span> 필수 입력 항목</p>
+<p class="text-bg-primary p-2 mb-4">기본 정보</p>
+<form >
+    <div class="row">
+        <div class="col-sm-6">
+            <p>
+                <label for="name" class="form-label">이 름 <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="name" id="name" size="8" required>
+            </p>
+            <p>
+                <label for="email" class="form-label">이메일 <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="email" id="email" size="15" placeholder="id@domain_name" required>
+            </p>
+            <p>
+                <label for="pwd" class="form-label">암 호<span class="text-danger">*</span></label>
+                <input type="password" class="form-control" name="pwd" id="pwd" size="12" placeholder="암호" required>
+            </p>
+            <p>
+                <label for="pwd2" class="form-label">암호 확인<span class="text-danger">*</span></label>
+                <input type="password" class="form-control" name="pwd" id="pwd2" size="12" placeholder="암호 확인" required>
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <p>
+                <label for="tel" class="form-label">모바일 폰<span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" name="tel" id="tel" size="13" placeholder="010-0000-0000" required>
+            </p>
+            <p>
+                <label for="url" class="form-label">홈 페이지</label>
+                <input type="url" class="form-control" name="url" id="url" size="30" placeholder="http://">
+            </p>
+            <p>
+                <label for="address" class="form-label">주 소<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="address" id="address" size="30" required>
+            </p>
+        </div>
+    </div>
+    <p class="text-bg-success p-2 mt-5 mb-4">학력</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>
+                <label for="school" class="form-label">학교 명<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="school" id="school" size="12" required>
+            </p>
+            <p>
+                <label for="major" class="form-label">전 공<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="major" id="major" size="12" required>
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <p>
+                <label for="graduation" class="form-label">졸업 여부<span class="text-danger">*</span></label>
+                    <select class="form-select" name="graduation" id="graduation" required>
+                        <option value="">---선택---</option>
+                        <option value="1">졸업 예정</option>
+                        <option value="2">졸 업</option>
+                    </select>
+            </p>
+            <p>
+                <label for="date" class="form-label">졸업(예정)년도</label>
+            <input class="form-control" type="date" name="date" id="date">
+            </p>
+        </div>
+    </div>
+    <p class="text-bg-secondary p-2 mt-5">업무 경력</p>
+    <span>최종 직위</span>
+    <div class="form-check">
+        <label class="form-check-label mx-3">
+            <input type="radio" class="form-check-input" name="position" value="0" checked>사원급
+        </label>
+        <label class="form-check-label mx-3">
+            <input type="radio" class="form-check-input" name="position" value="1">대리~과장
+        </label>
+        <label class="form-check-label mx-3">
+            <input type="radio" class="form-check-input" name="position" value="2">차장급 이상
+        </label>
+        <label class="form-check-label mx-3">
+            <input type="radio" class="form-check-input" name="position" value="3">임원급
+        </label>
+    </div>
+    <div>
+        <label for="task" class="form-label mt-4 mb-3">주요 담당 업무</label>
+            <textarea class="form-control" name="task" id="task" rows="10">담당했던 주요 업무를 기술하시오.</textarea>
+    </div>
+    <div class="text-center p mt-5">
+        <button type="submit" class="btn btn-outline-primary">제 출</button>
+        <button type="reset" class="btn btn-outline-primary">재작성</button>
+    </div>
+
+</form>
+</div>
+</body>
+</html>
